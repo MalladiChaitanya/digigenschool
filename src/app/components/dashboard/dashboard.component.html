@@ -1,0 +1,81 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class=" col-2 side-tab-wrapper">
+      <div class='side-tab col-12'>
+        <span class='tab-heading {{activeTab === "notifications" ? "active" : ""}}'
+          (click)="changeTab('notifications')"><i class="material-icons">
+            notifications_active
+          </i>Notifications</span>
+      </div>
+      <div class='side-tab col-12'>
+        <span class='tab-heading assignments {{activeTab === "assignments" ? "active" : ""}}'
+          (click)="changeTab('assignments')"><i class="material-icons">
+            assignment
+          </i>Assignments</span>
+      </div>
+      <div class='side-tab col-12'>
+        <span class='tab-heading {{activeTab === "lessons" ? "active" : ""}}' (click)="changeTab('lessons')">
+          <i class="material-icons">
+            menu_book
+          </i>Lessons</span>
+      </div>
+      <div class='side-tab col-12'>
+        <span class='tab-heading {{activeTab === "progressCard" ? "active" : ""}}'
+          (click)="changeTab('progressCard')"><i class="material-icons">
+            assessment
+          </i>Progress Card</span>
+      </div>
+      <div class='side-tab col-12'>
+        <span class='tab-heading {{activeTab === "mywork" ? "active" : ""}}' (click)="changeTab('mywork')"><i
+            class="material-icons">
+            pie_chart
+          </i>My work</span>
+      </div>
+      <div class='side-tab col-12'>
+        <span class='tab-heading {{activeTab === "corrections" ? "active" : ""}}' (click)="changeTab('corrections')"><i
+            class="material-icons">
+            check_box
+          </i>Corrections</span>
+      </div>
+      <div class='side-tab col-12'>
+        <span class='tab-heading {{activeTab === "chat" ? "active" : ""}}' (click)="changeTab('chat')"><i
+            class="material-icons">
+            message
+          </i>Chat</span>
+      </div>
+      <div class='side-tab col-12'>
+        <span class='tab-heading {{activeTab === "profile" ? "active" : ""}}' (click)="changeTab('profile')"><i
+            class="material-icons">
+            person
+          </i>Profile</span>
+      </div>
+    </div>
+
+    <div class="col-10 right-section">
+      <div class='tab-content' *ngIf="activeTab === 'assignments'">
+        <h1 class='selected-section'>{{selectedTab}}</h1>
+      </div>
+      <div class='tab-content' *ngIf="activeTab === 'lessons'">
+        <h1 class='selected-section'>{{selectedTab}}</h1>
+      </div>
+      <div class='tab-content' *ngIf="activeTab === 'notifications'">
+        <h1 class='selected-section'>{{selectedTab}}</h1>
+      </div>
+      <div class='tab-content' *ngIf="activeTab === 'progressCard'">
+        <h1 class='selected-section'>{{selectedTab}}</h1>
+      </div>
+      <div class='tab-content' *ngIf="activeTab === 'mywork'">
+        <h1 class='selected-section'>{{selectedTab}}</h1>
+      </div>
+      <div class='tab-content' *ngIf="activeTab === 'corrections'">
+        <h1 class='selected-section'>{{selectedTab}}</h1>
+      </div>
+      <div class='tab-content' *ngIf="activeTab === 'chat'">
+        <h1 class='selected-section'>{{selectedTab}}</h1>
+      </div>
+      <div class="tab-content" *ngIf='activeTab === "profile"'>
+        <h1 class='selected-section'>User Profile</h1>
+      </div>
+    </div>
+  </div>
+</div>

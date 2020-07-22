@@ -1,0 +1,116 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 800;
+}
+p {
+    line-height: 1.5;
+    margin: 30px 0;
+}
+
+.container-fluid {
+    height: 100%;
+
+    .row {
+        height: 100%;
+
+        .side-tab-wrapper {
+            background: #263b50;
+            overflow: auto;
+            .side-tab {
+                margin: 10px 0px;
+                padding: 0;
+                //background: #e9ecef;
+                display: table;
+                border-radius: 5px;
+
+                &:hover {
+                    cursor: pointer;
+                }
+
+                .tab-heading {
+                    height: 50px;
+                    display: table-cell;
+                    vertical-align: middle;
+                    width: 100%;
+                    color: #fff;
+                    font-size: 18px;
+
+                    &.active,
+                    &:hover {
+                        color: #0bf7f7;
+                    }
+
+                    .material-icons {
+                        font-size: 20px;
+                        vertical-align: middle;
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+        .tab-content {
+            padding: 20px;
+
+            .selected-section {
+                text-align: center;
+                font-size: 30px;
+            }
+
+            .lesson-preview {
+                font-size: 20px;
+                color: #212529;
+                font-family: Lora, "Times New Roman", serif;
+
+                a {
+                    color: #212529;
+
+                    &:hover,
+                    &:focus {
+                        text-decoration: none;
+                        color: #0085a1;
+                    }
+
+                    .lesson-title {
+                        font-size: 24px;
+                        margin-top: 30px;
+                        margin-bottom: 10px;
+                        text-align: left;
+                    }
+
+                    .lesson-subtitle {
+                        font-weight: 300;
+                        margin: 0 0 10px;
+                        font-size: 22px;
+                    }
+                }
+
+                .lesson-meta {
+                    font-size: 18px;
+                    font-style: italic;
+                    margin-top: 0;
+                    color: #868e96;
+
+                    a {
+                        text-decoration: none;
+                        color: #212529;
+                    }
+                }
+            }
+        }
+        .right-section {
+            overflow: auto;
+        }
+    }
+}
+
+.lesson-title-top-tag {
+    font-size: 24px;
+}
+
+.small-lessons-list {
+    font-size: 22px;
+}
