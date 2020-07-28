@@ -1,11 +1,14 @@
 @import "~material-icons/iconfont/material-icons.css";
-@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
 
 html,
 body {
     height: 100%;
     margin: 0px;
     padding: 0px;
+}
+*{
+    box-sizing: border-box;
 }
 .fill-remaining-space {
     flex: 1 1 auto;

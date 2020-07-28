@@ -16,6 +16,15 @@ import { LoginRegisterComponent } from './components/login-register/login-regist
 import { RegisterationComponent } from './components/registeration/registeration.component';
 import { LoginComponent } from './components/login/login.component';
 
+import {HomeComponent} from "./components/home/home.component";
+import {FlexLayoutModule} from "@angular/flex-layout";
+import {ChatListComponent} from "./components/chat/chat-list/chat-list.component";
+import {ChatWindowComponent} from "./components/chat/chat-window/chat-window.component";
+import {SingleChatComponent} from "./components/chat/single-chat/single-chat.component";
+import {UserProfileComponent} from "./components/chat/user-profile/user-profile.component";
+import {ContactProfileComponent} from "./components/chat/contact-profile/contact-profile.component";
+import {SimpleMsgComponent} from "./components/messages/simple-msg/simple-msg.component";
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,13 +33,21 @@ import { LoginComponent } from './components/login/login.component';
     LoadingDialogDetailComponent,
     LoginRegisterComponent,
     RegisterationComponent,
-    LoginComponent
+    LoginComponent,
+    HomeComponent,
+    ChatListComponent,
+    ChatWindowComponent,
+    SingleChatComponent,
+    UserProfileComponent,
+    ContactProfileComponent,
+    SimpleMsgComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
     HttpClientModule,
+    FlexLayoutModule,
     MaterialModule.forRoot(),
     RouterModule.forRoot(routes)
   ],
