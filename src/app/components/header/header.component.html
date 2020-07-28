@@ -5,7 +5,9 @@
     </i><span class="header-logo-text">DigiGen School</span>
 
     <!-- This fills the remaining space of the current row -->
-    <span class="fill-remaining-space"></span>
+    <div class="calendar-holder">
+      <i class="material-icons">calendar_today</i>
+    </div>
 
     <span class="header-signin" *ngIf="appService.user.username" (click)="signout()">Sign Out</span>
   </mat-toolbar>
