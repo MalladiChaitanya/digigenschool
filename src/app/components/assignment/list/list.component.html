@@ -1,0 +1,18 @@
+<div class="header list-list-header">
+    <!-- <div class="avatar" (click)="showAvatarClicked()"><i class="material-icons">sort</i></div> -->
+    <div class="header-options">
+        <mat-form-field appearance="fill">
+            <mat-label>Sort</mat-label>
+            <mat-select>
+                <mat-option>Status</mat-option>
+                <mat-option>Date</mat-option>
+                <mat-option>Subject</mat-option>
+                <mat-option>Complexity</mat-option>
+            </mat-select>
+        </mat-form-field>
+    </div>
+</div>
+<div class="list-list">
+    <!-- <app-list-item class="list" (showContactProfile)="contactAvatarClicked($event)"></app-list-item> -->
+    <app-list-item *ngFor="let assignment of assignments" [title]="assignment.title" [desc]="assignment.desc" [subject]="assignment.subject" class="list"></app-list-item>
+</div>

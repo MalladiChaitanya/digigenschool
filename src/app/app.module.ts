@@ -24,6 +24,9 @@ import {SingleChatComponent} from "./components/chat/single-chat/single-chat.com
 import {UserProfileComponent} from "./components/chat/user-profile/user-profile.component";
 import {ContactProfileComponent} from "./components/chat/contact-profile/contact-profile.component";
 import {SimpleMsgComponent} from "./components/messages/simple-msg/simple-msg.component";
+import { ListComponent } from './components/assignment/list/list.component';
+import { ListItemComponent } from './components/assignment/list-item/list-item.component';
+import { AssignmentComponent } from './components/assignment/assignment/assignment.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +43,10 @@ import {SimpleMsgComponent} from "./components/messages/simple-msg/simple-msg.co
     SingleChatComponent,
     UserProfileComponent,
     ContactProfileComponent,
-    SimpleMsgComponent
+    SimpleMsgComponent,
+    ListComponent,
+    ListItemComponent,
+    AssignmentComponent
   ],
   imports: [
     BrowserModule,
