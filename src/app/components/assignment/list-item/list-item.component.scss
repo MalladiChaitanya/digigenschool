@@ -9,9 +9,14 @@
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    background-color: #eeeeee;
-    cursor: pointer;
-    border: 2px solid #cccccc;
+    // background-color: #eeeeee;
+    // cursor: pointer;
+    // border: 2px solid #cccccc;
+}
+
+.avatar img {
+    width: 100%;
+    height: auto;
 }
 
 .avatar.online {
