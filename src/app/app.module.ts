@@ -13,6 +13,8 @@ import { AppService } from './services/app.service';
 import { HttpClientModule } from '@angular/common/http';
 import { LoadingDialogDetailComponent } from './components/loading-dialog/loading-dialog-detail.component';
 import { LoginRegisterComponent } from './components/login-register/login-register.component';
+import { RegisterationComponent } from './components/registeration/registeration.component';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { LoginRegisterComponent } from './components/login-register/login-regist
     HeaderComponent,
     DashboardComponent,
     LoadingDialogDetailComponent,
-    LoginRegisterComponent
+    LoginRegisterComponent,
+    RegisterationComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

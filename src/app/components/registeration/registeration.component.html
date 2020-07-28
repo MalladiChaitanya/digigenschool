@@ -1,0 +1,53 @@
+<div class="registration-container align-middle">
+    <div class="register_text1">Create an account</div>
+    <div class="register_text2 ">If you don't have one.</div>
+    <form [formGroup]="registerForm" (ngSubmit)="saveRegister()">
+        <div>
+            <mat-form-field>
+                <input matInput placeholder="First Name" formControlName="fname" id="fname" required>
+            </mat-form-field>
+        </div>
+        <div>
+            <mat-form-field>
+                <input matInput placeholder="Last Name" formControlName="lname" id="lname" required>
+            </mat-form-field>
+        </div>
+        <div>
+            <mat-form-field>
+                <input matInput placeholder="Roll Number/User Name" formControlName="username" id="username" required>
+            </mat-form-field>
+        </div>
+        <div>
+            <mat-form-field>
+                <input matInput placeholder="password" type="password" formControlName="password" id="password"
+                    required>
+            </mat-form-field>
+        </div>
+        <div>
+            <mat-form-field>
+                <input matInput placeholder="Email" type="email" formControlName="email" id="email" required>
+            </mat-form-field>
+        </div>
+        <div>
+            <mat-form-field>
+                <input matInput placeholder="Grade" formControlName="grade" id="grade" required>
+            </mat-form-field>
+        </div>
+        <div>
+            <mat-form-field>
+                <input matInput placeholder="Section" formControlName="section" id="section" required>
+            </mat-form-field>
+        </div>
+        <div>
+            <mat-form-field>
+                <input matInput placeholder="Phone" type="number" formControlName="phone" id="phone" required>
+            </mat-form-field>
+        </div>
+        <div>
+            <mat-form-field>
+                <input matInput placeholder="Parent ID" formControlName="parentid" id="grade" required>
+            </mat-form-field>
+        </div>
+        <button mat-raised-button type="submit" [disabled]="!registerForm.valid" color="primary">Submit</button>
+    </form>
+</div>
